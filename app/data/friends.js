@@ -99,7 +99,7 @@ var friendsArr = [
         ]
       },
       {
-        "name": "Scott=",
+        "name": "Scott",
         "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/CoolScottyAuks.jpg/440px-CoolScottyAuks.jpg",
         "scores": [
             "1",
