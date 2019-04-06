@@ -263,12 +263,11 @@
     </div>
 
 
-    <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" id="friendBtn" data-toggle="modal" data-target="#friendsModal">
         View Friends
     </button>
 
-    <!-- Modal -->
+
     <div class="modal fade" id="friendsModal" tabindex="-1" role="dialog" aria-labelledby="friendsModal"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -280,7 +279,7 @@
                     </button>
                 </div>
                 <div class="modal-body" id="friendsModalBody">
-                    <!-- new friend info here -->
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -325,7 +324,7 @@
                 };
                 $.post('/api/friends', newFriend,
                     function (data) {
-                        
+
                         for (var i = 0; i < data.length; i++) {
                             var modalDiv = $("<div>");
                             modalDiv.addClass("newFriendModal text-center");
@@ -336,7 +335,7 @@
                         };
                         $('#friendsModal').modal('show');
                     });
-                
+
                 $('#name').val('');
                 $('#photo').val('');
             } else {
